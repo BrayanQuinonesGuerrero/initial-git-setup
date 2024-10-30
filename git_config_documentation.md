@@ -1,8 +1,8 @@
-# Configuración de Git
+# Configuración incial de Git
 
 Esta guía cubre algunos comandos esenciales para configurar Git a nivel global en el sistema. Estos comandos definen el comportamiento del editor, el formato del log y otros aspectos importantes.
 
-## Configuración Básica de Usuario
+## Configuración básica de usuario
 
 Establece el nombre y correo electrónico globales para todos los repositorios en este sistema.
 
@@ -13,8 +13,9 @@ git config --global user.email "example@gmail.com"
 
 - **`user.name`**: Define el nombre del usuario que aparecerá en los commits.
 - **`user.email`**: Especifica el correo electrónico asociado a los commits.
+- **Nota:** Recuerda reemplazar `"JohnDoe"` y `"example@gmail.com"` por tu propio nombre y correo electrónico.
 
-## Editor Predeterminado
+## Editor predeterminado
 
 Define el editor de texto para Git. Si deseas usar VSCode como editor, este comando abrirá el editor y esperará que el archivo se cierre antes de continuar.
 
@@ -24,7 +25,7 @@ git config --global core.editor "code --wait"
 
 - **`core.editor`**: Indica el editor de texto que se abrirá para mensajes de commit y otras ediciones.
 
-## Control de Fin de Línea
+## Control de fin de línea
 
 Establece cómo Git manejará los saltos de línea, útil para colaborar en proyectos entre sistemas operativos diferentes.
 
@@ -34,7 +35,7 @@ git config --global core.autocrlf input
 
 - **`core.autocrlf`**: Con `input`, convierte CRLF a LF al cargar archivos, pero los deja sin cambios al extraerlos. Esto es ideal para sistemas UNIX/Linux.
 
-## Abreviación de Hash
+## Abreviación de hash
 
 Limita la cantidad de caracteres en los identificadores de commit que muestra Git, lo cual es útil para simplificar la visualización en logs.
 
@@ -54,7 +55,7 @@ git config --global color.ui true
 
 - **`color.ui`**: Habilita la coloración en las salidas de Git.
 
-## Rama por Defecto
+## Rama por defecto
 
 Define el nombre de la rama principal al inicializar un repositorio. `main` es una práctica común en lugar de `master`.
 
@@ -64,7 +65,7 @@ git config --global init.defaultBranch main
 
 - **`init.defaultBranch`**: Especifica `main` como la rama inicial predeterminada en nuevos repositorios.
 
-## Alias para el Log de Git
+## Alias para el log de Git
 
 Crea un alias para ver el historial de commits en un formato gráfico, con colores y detalles como la fecha relativa y el autor.
 
