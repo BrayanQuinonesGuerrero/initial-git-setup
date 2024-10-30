@@ -79,3 +79,11 @@ git config --global alias.lg "log --graph --abbrev-commit --decorate --format=fo
   - `%s`: Mensaje del commit.
   - `%an`: Nombre del autor del commit.
   - `%d`: Referencias del commit (ej. nombres de ramas).
+
+### Ejemplo de uso
+
+Para ver el log de commits usando el alias configurado ejecuta el siguiente comando:
+
+```bash
+git lg
+```
